@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Intrest Calculator</h1>
+    <form>
+        <label for="principal">Principal Amount: </label>
+        <input type="number" id="principal" placeholder="$10000">
+
+        <label for="rate">Intrest Rate: </label>
+        <input type="number" id="rate" placeholder="eg: 8%">
+
+        <label for="years">Years: </label>
+        <input type="number" id="years" placeholder="eg: 5">
+
+        <label for="n">Compounds per Year: </label>
+        <input type="number" id="n" placeholder="e.g. 1 = yearly, 4 = quarterly">
+
+        <button type="button" onclick="calculate()">Submit</button>
+
+        <p id="total">Total: <span id="total-amount">$0.00</span></p>
+    </form>
+
+
+
+    <div class="formula-box">
+        <p><strong>Formula used:</strong></p>
+        <p>A = P × (1 + r / n)<sup>n × t</sup></p>
+        <p>
+            Where:<br>
+            P = Principal<br>
+            r = Annual Interest Rate (decimal)<br>
+            n = Compounds per Year<br>
+            t = Time in Years
+        </p>
+        <p class="disclaimer">
+            Note: Results are approximate due to rounding and floating-point calculations.
+        </p>
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
