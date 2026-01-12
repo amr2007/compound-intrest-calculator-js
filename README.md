@@ -22,9 +22,7 @@ The project focuses on clarity, correctness, and transparency — both in the ma
 
 The calculator uses the standard compound interest formula:
 
-\[
-A = P \times (1 + \frac{r}{n})^{n \times t}
-\]
+A = P × (1 + r / n)n × t
 
 Where:
 
